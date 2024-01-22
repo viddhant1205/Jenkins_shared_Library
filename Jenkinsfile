@@ -57,7 +57,7 @@ pipeline{
             steps{
                 script{
                    withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker'){
-                       sh "docker build --build-arg REACT_APP_RAPID_API_KEY=f0ead79813ms -t youtube ."
+                       sh "docker build --build-arg REACT_APP_RAPID_API_KEY=df53b8aba6msh32b1da396f0e548p1d775cjsn9108e8018b75 -t youtube ."
                        sh "docker tag youtube kubegourav/youtube:latest "
                        sh "docker push kubegourav/youtube:latest "
                     }
